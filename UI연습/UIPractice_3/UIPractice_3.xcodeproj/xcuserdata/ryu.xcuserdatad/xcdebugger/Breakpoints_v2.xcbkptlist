@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIPractice_3/ViewController.swift"
+            timestampString = "575366724.0552191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "configureAttribute()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIPractice_3/ViewController.swift"
+            timestampString = "575366724.0559911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIPractice_3.ViewController.totalPriceNumber.getter : Swift.Int"
+                  moduleName = "UIPractice_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryu/Desktop/FastCampus/2019.03.27/UIPractice/3/start/UIPractice_3/UIPractice_3/ViewController.swift"
+                  timestampString = "575360897.5819449"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIPractice_3.ViewController.totalPriceNumber.setter : Swift.Int"
+                  moduleName = "UIPractice_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryu/Desktop/FastCampus/2019.03.27/UIPractice/3/start/UIPractice_3/UIPractice_3/ViewController.swift"
+                  timestampString = "575360897.5842119"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIPractice_3.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UIPractice_3.ViewController"
+                  moduleName = "UIPractice_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryu/Desktop/FastCampus/2019.03.27/UIPractice/3/start/UIPractice_3/UIPractice_3/ViewController.swift"
+                  timestampString = "575360897.586159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1859">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIPractice_3.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UIPractice_3.ViewController&gt;"
+                  moduleName = "UIPractice_3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryu/Desktop/FastCampus/2019.03.27/UIPractice/3/start/UIPractice_3/UIPractice_3/ViewController.swift"
+                  timestampString = "575360897.588217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1824">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
