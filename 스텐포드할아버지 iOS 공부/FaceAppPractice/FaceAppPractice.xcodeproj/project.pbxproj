@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		428225B6227D212F00EE180B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428225B5227D212F00EE180B /* AppDelegate.swift */; };
-		428225B8227D212F00EE180B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428225B7227D212F00EE180B /* ViewController.swift */; };
+		428225B8227D212F00EE180B /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428225B7227D212F00EE180B /* FaceViewController.swift */; };
 		428225BB227D212F00EE180B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428225B9227D212F00EE180B /* Main.storyboard */; };
 		428225BD227D213100EE180B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428225BC227D213100EE180B /* Assets.xcassets */; };
 		428225C0227D213100EE180B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428225BE227D213100EE180B /* LaunchScreen.storyboard */; };
+		4282262D228441FB00EE180B /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282262C228441FB00EE180B /* FaceView.swift */; };
+		4282262F22850D4F00EE180B /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282262E22850D4F00EE180B /* FacialExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		428225B2227D212F00EE180B /* FaceAppPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAppPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428225B5227D212F00EE180B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		428225B7227D212F00EE180B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		428225B7227D212F00EE180B /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		428225BA227D212F00EE180B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		428225BC227D213100EE180B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428225BF227D213100EE180B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		428225C1227D213100EE180B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4282262C228441FB00EE180B /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		4282262E22850D4F00EE180B /* FacialExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				428225B5227D212F00EE180B /* AppDelegate.swift */,
-				428225B7227D212F00EE180B /* ViewController.swift */,
-				428225B9227D212F00EE180B /* Main.storyboard */,
 				428225BC227D213100EE180B /* Assets.xcassets */,
 				428225BE227D213100EE180B /* LaunchScreen.storyboard */,
+				4282262B2284412800EE180B /* Suporting Files */,
+				428225B7227D212F00EE180B /* FaceViewController.swift */,
+				4282262C228441FB00EE180B /* FaceView.swift */,
+				4282262E22850D4F00EE180B /* FacialExpression.swift */,
 				428225C1227D213100EE180B /* Info.plist */,
+				428225B9227D212F00EE180B /* Main.storyboard */,
 			);
 			path = FaceAppPractice;
+			sourceTree = "<group>";
+		};
+		4282262B2284412800EE180B /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Suporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428225B8227D212F00EE180B /* ViewController.swift in Sources */,
+				428225B8227D212F00EE180B /* FaceViewController.swift in Sources */,
+				4282262F22850D4F00EE180B /* FacialExpression.swift in Sources */,
 				428225B6227D212F00EE180B /* AppDelegate.swift in Sources */,
+				4282262D228441FB00EE180B /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
