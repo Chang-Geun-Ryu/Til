@@ -154,14 +154,33 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
       guard let uploadData = profileImg.jpegData(compressionQuality: 0.3) else { return }
       
       let fileName = NSUUID().uuidString
-      Storage.storage().reference().child("profile_images").child(fileName).putData(uploadData, metadata: nil, completion: { (metadata, error) in
-        
+      let storageRef = Storage.storage().reference().child("profile_images").child(fileName)
+      
+      storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+        // handle error
         if let error = error {
           print("Failed to upload image to Firebase Storage with error: ", error.localizedDescription)
         }
         
-        // profile image url
-        guard let profileImageURL = metadata.down
+        // UPDATE: - Firebase 5 must retrieve download url
+        storageRef.downloadURL(completion: { (downloadURL, error) in
+          guard let profileImageURL = downloadURL?.absoluteString else {
+            print("DEBUG: Profile image url is nil")
+            return
+          }
+          
+          let dictionaryValues = ["name": fullName,
+                                  "username": userName,
+                                  "profileImageUrl": profileImageURL]
+          
+          let values []
+          
+          // save user info to database
+          Database.database().reference().child("users").updateChildValues(dictionaryValues, withCompletionBlock: { (error, ref) in
+            
+          })
+          
+        })
       })
     }
   }
