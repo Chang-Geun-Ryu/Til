@@ -41,3 +41,76 @@
 * 특정 데이터 아이템을 찾는 방법
 * 모든 데이터 아이템을 순회하는 방법
 * 데이터 아이템을 정렬하는 방법
+
+
+
+#### InsertionSrot
+
+```swift
+func insertionSort(list: inout [Int]) {
+  for indexOuter in 1..<list.count {
+    let tmp = list[i]
+    var indexInner = indexOuter - 1
+    while indexInner >= 0 && list[indexInner] > tmp {
+      list[indexInner + 1] = list[indexInner]
+      indexInner = indexInner - 1
+    }
+    list[indexInner + 1] = tmp
+  }
+}
+```
+
+#### mergeSort
+
+```swift
+func mergeSort<T:Comparable>( list:inout [T]) {
+    if list.count <= 1 {
+        return
+    }
+    
+    func merge( left:[T], right:[T]) -> [T] {
+        var left = left
+        var right = right
+        var result = [T]()
+        
+        while left.count != 0 && right.count != 0 {
+            if left[0] <= right[0] {
+                result.append(left.remove(at: 0))
+            } else {
+                result.append(right.remove(at: 0))
+            }
+        }
+        
+        while left.count != 0 {
+            result.append(left.remove(at: 0))
+        }
+        
+        while right.count != 0 {
+            result.append(right.remove(at: 0))
+        }
+        
+        return result
+    }
+    
+    var left = [T]()
+    var right = [T]()
+    
+    let mid = list.count / 2
+    
+    for i in 0..<mid {
+        left.append(list[i])
+    }
+    
+    for i in mid..<list.count {
+        right.append(list[i])
+    }
+    // 재귀
+    mergeSort(list: &left)
+    mergeSort(list: &right)
+    
+    list = merge(left: left, right: right)
+}
+```
+
+**소규모 데이터의 경우 insertionSort가 mergeSort보다 유리 하지만 대규모 데이터의 경우 mergeSort가 유리**
+
